@@ -1,0 +1,57 @@
+{
+  "format_version": 3,
+  "format_uuid": "289f771f-2c9a-4d73-9f3f-8492495a924d",
+  "tooth": "github.com/MiracleForest/iEconomicSystem",
+  "version": "1.0.0",
+  "info": {
+    "name": "iEconomicSystem",
+    "description": "iEconomicSystem is a multi-economy plugin for LeviLamina.",
+    "tags": ["platform:levilamina", "type:mod"]
+  },
+  "variants": [
+    {
+      "label": "",
+      "platform": "win-x64",
+      "dependencies": {
+        "github.com/LiteLDev/LeviLamina": "26.51.*"
+      },
+      "assets": [
+        {
+          "type": "zip",
+          "urls": [
+            "https://{{tooth}}/releases/download/v{{version}}/iEconomicSystem-server-windows-x64.zip"
+          ],
+          "placements": [
+            {
+              "type": "dir",
+              "src": "iEconomicSystem/",
+              "dest": "plugins/iEconomicSystem/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "client",
+      "platform": "win-x64",
+      "dependencies": {
+        "github.com/LiteLDev/LeviLamina#client": "26.51.*"
+      },
+      "assets": [
+        {
+          "type": "zip",
+          "urls": [
+            "https://{{tooth}}/releases/download/v{{version}}/iEconomicSystem-client-windows-x64.zip"
+          ],
+          "placements": [
+            {
+              "type": "dir",
+              "src": "iEconomicSystem/",
+              "dest": "mods/iEconomicSystem/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
